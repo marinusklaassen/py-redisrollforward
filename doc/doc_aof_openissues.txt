@@ -1,0 +1,24 @@
+(DONE) AA: /amber_fluxconfig/redisaof/srv-flux-live-01 meegeven als URL parameter
+(DONE) AA: SharedConfigFile meegeven als RedisServerSummary
+(DONE) AA: Daarna, alles onder masker aof_read_*.json als linkje tonen
+(DONE) AA: hardcoded: "open shared config file" wordt "open target config"
+(DONE) AA: Bij OnUrl, oude Link objects wegpleuren
+(DONE) AA: .json wordt niet in json editor geopend
+(DONE) AA: zowel Genson als Jackson wordt gebruikt
+(DONE) AA: sc_path en c_socket moeten naar amber_javacommon
+(DONE) AA: newaawizard: ext/unzip_in_local_jar meegenereren in ant build file
+(DONE) GH: OpenProjectResource: wellicht nieuwe overload er weer uit (of andere naam, want geen project) (geeft op dit moment exception)
+(DONE) AA: Validate: Source redis tag: regex zoals in json config doc
+(DONE) AA: Validate: Source redis server host: regex op ^[0-9\.]+$ (ip address)
+(DONE) PY: Weggooien temp config staat tijdelijk uit
+(DONE) PY: Quick and dirty logging weghalen, zie bv "self.oLog.info("src configfile: " + self.cConfigpath)"
+(DONE) PY: "Finished" feedback verbeteren/aanvullen, 'Finished reconstruct request' is niet het laatste wat ie doet.
+(DONE) PY: 2015 05 20 TW/MK: AOF funnel reageert niet op SIGTERM -> later. Harde kill is ook safe. ('DONE': reageert nu wel, maar lost probleem van hangende poort niet op. Zie 'spawn' in source voor verdere uitleg.)
+(DONE) PY: Restart van aof_reconstruct werkt niet door hangende TCP port. Zie 'spawn' in source voor verdere uitleg.
+(DONE) AA: (+PY) "Sending json request" -> er worden twee standaards gebruikt. Refactor.
+(DONE) GH: Job support
+(DONE) AA: newaawizard geeft fout na restart python interpreter ('DONE': een echte fix voerde te ver, timeboxed. Duidelijke feedback gegeven met workaround, en op te pakken als we overgaan naar Eclipse 4 / OE11.5) 
+
+(L8TR) PY: Custom redis-server config bij aof_reconstruct, zodat eerst onze Lua scripts worden ingeladen. (Note: Lua scripts die data wijzigen komen in AOF en worden wél geladen. For the time being: gebruik de AA Lua Loader voor je eigen omgeving, met 'all uncommitted' niet aangevinkt.) 
+
+#EOF

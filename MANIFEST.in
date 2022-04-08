@@ -1,0 +1,6 @@
+include LICENSE
+include MANIFEST.in
+include README.md
+include requirements.txt
+#recursive-include redisrollforward *
+#exclude dummy_none

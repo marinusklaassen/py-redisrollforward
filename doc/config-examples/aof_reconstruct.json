@@ -1,0 +1,21 @@
+{
+
+  "mode"                    : "aof_reconstruct",
+  "mode.doc"                : "This mode reconstruct data from the aofbackupdir until specified datetime in mode:aof_reconstruct",
+  "mode.notes"              : "Handles multiple clients on multiple servers.",
+                            
+  "reconstructhost"         : "srv-mybackupserver",
+  "reconstructhost.doc"     : "The machine where the AOF slices reside. You can also enter 'localhost'.",
+  
+  "reconstructhostport"     : "30002",
+  "reconstructhostport.doc" : "The TCP server-socket port of the aof_reconstruct instance, which will be available for mode:redis_recreate instances on other machines. Choose a port number that is outside of the dynamic port range of the os.",
+  
+  "aofbackupdir"            : "/var/aofbackup",
+  "aofbackupdir.doc"        : "A path to the local file system where the aof parts will be written to. Several files can be created per second. A shallow directory structure will be created on the fly.",
+  "aofbackupdir.notes"      : "Example of output: '/var/aofbackup/192.168.100.10/dwan_6379__2015-03-13_23-46-59_-_2015-03-13_23-51-44.lz4'; this is a slice of 23:51:44 that is part of a base set made by bgrewriteaof on 23:46:59.",
+                            
+  "logdir"                  : "/var/aofreconstruct",
+  "logdir.doc"              : "The full path to the logging directory of this process"
+  
+}
+

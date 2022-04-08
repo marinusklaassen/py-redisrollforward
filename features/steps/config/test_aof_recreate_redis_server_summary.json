@@ -1,0 +1,85 @@
+{ 
+
+    "dev.doc"                      : "srv-flux-dev-01",
+                                   
+    "tst.dlan__14202"              : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14202.conf",     
+    "tst.dwan__14203"              : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14203.conf",
+    "tst.dwan#fxbi__14205"         : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14205.conf", 
+    "misc.dlan__14212"             : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14212.conf",     
+    "misc.dwan__14213"             : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14213.conf",
+    "misc.dwan#fxbi__14215"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14215.conf", 
+    "pub.dlan__14222"              : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14222.conf",
+    "pub.dwan__14223"              : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14223.conf",
+    "pub.dwan#fxbi__14225"         : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14225.conf",
+                                   
+    "wrkdev.doc"                   : "test[n] srv-flux-dev-01", 
+
+    "testT.tst.dlan__14302"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14302.conf",     
+    "testT.tst.dwan__14303"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14303.conf",
+    "testT.tst.dwan#fxbi__14305"   : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14305.conf", 
+    "testT.misc.dlan__14312"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14312.conf",     
+    "testT.misc.dwan__14313"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14313.conf",
+    "testT.misc.dwan#fxbi__14315"  : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14315.conf", 
+    "testT.pub.dlan__14322"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14322.conf",
+    "testT.pub.dwan__14323"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14323.conf",
+    "testT.pub.dwan#fxbi__14325"   : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14325.conf",
+
+    "testR.tst.dlan__14402"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14402.conf",     
+    "testR.tst.dwan__14403"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14403.conf",
+    "testR.tst.dwan#fxbi__14405"   : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14405.conf", 
+    "testR.misc.dlan__14412"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14412.conf",     
+    "testR.misc.dwan__14413"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14413.conf",
+    "testR.misc.dwan#fxbi__14415"  : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14415.conf", 
+    "testR.pub.dlan__14422"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14422.conf",
+    "testR.pub.dwan__14423"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14423.conf",
+    "testR.pub.dwan#fxbi__14425"   : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14425.conf",
+    
+    "testS.tst.dlan__14502"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14502.conf",     
+    "testS.tst.dwan__14503"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14503.conf",
+    "testS.tst.dwan#fxbi__14505"   : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14505.conf", 
+    "testS.misc.dlan__14512"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14512.conf",     
+    "testS.misc.dwan__14513"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14513.conf",
+    "testS.misc.dwan#fxbi__14515"  : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14515.conf", 
+    "testS.pub.dlan__14522"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14522.conf",
+    "testS.pub.dwan__14523"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14523.conf",
+    "testS.pub.dwan#fxbi__14525"   : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14525.conf",
+    
+    "testH.tst.dlan__14602"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14602.conf",     
+    "testH.tst.dwan__14603"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14603.conf",
+    "testH.tst.dwan#fxbi__14605"   : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14605.conf", 
+    "testH.misc.dlan__14612"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14612.conf",     
+    "testH.misc.dwan__14613"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14613.conf",
+    "testH.misc.dwan#fxbi__14615"  : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14615.conf", 
+    "testH.pub.dlan__14622"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14622.conf",
+    "testH.pub.dwan__14623"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14623.conf",
+    "testH.pub.dwan#fxbi__14625"   : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14625.conf",
+    
+    "testJ.tst.dlan__14702"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14702.conf",  
+    "testJ.tst.dwan__14703"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14703.conf",  
+    "testJ.tst.dwan#fxbi__14705"   : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14705.conf",  
+    "testJ.misc.dlan__14712"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14712.conf",      "testJ.misc.dwan__14713"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14713.conf",      "testJ.misc.dwan#fxbi__14715"  : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14715.conf",      "testJ.pub.dlan__14722"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14722.conf",      "testJ.pub.dwan__14723"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14723.conf",      "testJ.pub.dwan#fxbi__14725"   : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14725.conf", 
+    
+    "testM.tst.dlan__14802"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14802.conf",  
+    
+    "test.tst.dwan__6379"          : "%AmberEclipseWorkspace%py-redisrollforward/features/steps/testdata/redis.conf",     
+    
+    "testM.tst.dwan#fxbi__14805"   : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14805.conf",  
+    "testM.misc.dlan__14812"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14812.conf",  
+    "testM.misc.dwan__14813"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14813.conf",  
+    "testM.misc.dwan#fxbi__14815"  : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14815.conf",  
+    "testM.pub.dlan__14822"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14822.conf",  
+    "testM.pub.dwan__14823"        : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14823.conf",  
+    "testM.pub.dwan#fxbi__14825"   : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14825.conf", 
+    
+    "testD2.tst.dlan__14902"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14902.conf",  
+    "testD2.tst.dwan__14903"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14903.conf",  
+    "testD2.tst.dwan#fxbi__14905"  : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14905.conf",  
+    "testD2.misc.dlan__14912"      : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14912.conf",  
+    "testD2.misc.dwan__14913"      : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14913.conf",  
+    "testD2.misc.dwan#fxbi__14915" : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14915.conf",  
+    "testD2.pub.dlan__14922"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14922.conf",  
+    "testD2.pub.dwan__14923"       : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14923.conf",  
+    "testD2.pub.dwan#fxbi__14925"  : "/var/srvbase/repo_hg/amber_fluxconfig/redisconfig/redis_srv-flux-dev-01__14925.conf"
+    
+}
+     

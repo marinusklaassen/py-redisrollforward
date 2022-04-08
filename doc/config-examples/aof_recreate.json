@@ -1,0 +1,31 @@
+{
+
+  "mode"                            : "aof_recreate",
+  "mode.doc"                        : "This mode recreates a redis instance with the reconstructed data from redis_aof_reconstruct until specified datetime.",
+  "mode.notes"                      : "Handles multiple clients on multiple servers.",
+                            
+  "reconstructhost"                 : "srv-mybackupserver",
+  "reconstructhost.doc"             : "The machine where the AOF slices reside. You can also enter 'localhost'.",
+  
+  "reconstructport"                 : "30002",
+  "reconstructport.doc"             : "The TCP server-socket port of the aof_reconstruct instance, which will be available for mode:redis_recreate instances on other machines.",
+ 
+  "recreatehost"                    : "localhost",
+  "recreatehost.doc"                : "The current machine. Supply the name on which the server should be registered by the os. You can also enter 'localhost'. Choose a port number that is outside of the dynamic port range of the os.",
+  
+  "recreateport"                    : "30003",
+  "recreateport.doc"                : "The TCP server-socket port of the aof_reconstruct instance, which will be available for mode:redis_recreate instances on other machines.",
+    
+  "redisstartupcommand"             : "/usr/local/bin/redis-server",
+  "redisstartupcommand.doc"         : "The redis startup command needed to automatically start a redis instance by recreate process. This command can be different on each operating system.",
+ 
+  "workdir"                         : "/mypath", 
+  "workdir.doc"                     : "The full path to the work directory where the altered redis.conf file are temporarily placed.",   
+     
+  "target_redis_server_summary"     : "/mypath/aof_recreate_redis_server_summary.json",
+  "target_redis_server_summary.doc" : "The full path to the redis instance config files. This process automatically enables the appendonly persistence functionality.",
+                            
+  "logdir"                          : "/tmp",
+  "logdir.doc"                      : "The full path to the logging directory of this process"
+  
+}

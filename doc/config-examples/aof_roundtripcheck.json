@@ -1,0 +1,64 @@
+{
+ 
+  "mode"                     : "aof_roundtripcheck",
+  "mode.doc"                 : "This mode performs the integration check of the aof_read and aof_funnel processes.",
+  "mode.notes"               : "Handles multiple clients on multiple servers.", 
+                                
+  "roundtripcheckhost"       : "srv-baspas",
+  "roundtripcheckhost.doc"   : "The current machine. Supply the name on which the server should be registered by the os. You can also enter 'localhost'.",
+                             
+  "aofbackupdir"             : "/mypath/",
+  "aofbackupdir.doc"         : "A path to the local file system where the aof parts will be read from. Several files can be created per second. A shallow directory structure is created on the fly.",
+  "aofbackupdir.notes"       : "Example of a backup file: '/var/aofbackup/192.168.100.10/2015-03-13/dwan_6379__2015-03-13_23-46-59_-_2015-03-13_23-51-44.lz4'; this is a slice of 23:51:44 that is part of a base set made by bgrewriteaof on 23:46:59.",
+                             
+  "logdir"                   : "/mypath/",
+  "logdir.doc"               : "The full path to the logging directory of this process",
+                             
+  "pausetimewindow"          : "01:45-02:30", 
+  "pausetimewindow.doc"      : "During this time window the roundtripcheck is automatically paused (needed during an AOF rewrite). An example of a start & end time setting: 01:45-02:30. The time format is %H:%M.", 
+                              
+  "writeduringpausetime"     : false, 
+  "writeduringpausetime.doc" : "Keep on writing during pause time, but do not do the check. Only useful if another process interprets the writes as well.", 
+                             
+  "influxdb_host"            : "influxdb-host",
+  "influxdb_port"            : 8086,
+  "influxdb_dbname"          : "dname",
+  "influxdb_retentionpolicy" : "A",
+  "influxdb.doc"             : "Write the total write and parse duration to InfluxDB for time measurement analysis.",     
+  "influxdb_workdir"         : "/myworkdir", 
+  "influxdb_workdir.doc"     : "During InfluxDB offline time, write measurements to a file in this directory.",     
+  "influxdb_workfile"        : "measurements_MYUNIQUENAME.dat",
+  "influxdb_workfile.doc"    : "During InfluxDB offline time, write measurements to this file-name. Will survive restarts of this process as well.",     
+  
+  "influxdb_pausetimewindow"     : "22:59-23:01", 
+  "influxdb_pausetimewindow.doc" : "During this time window the roundtripcheck does not write measurements to influxdb (needed during an influxdb restart). An example of a start & end time setting: 00:00-00:02. The time format is %H:%M.", 
+  
+  "targets"                  : [
+                             
+                                 { 
+                                 
+                                    "redishost"       : "redis-host1",
+                                    "redishost.doc"   : "The IP-adress of the machine where the redis instance is located.", 
+                                            
+                                    "redisport"       : "6379",                                                               
+                                    "redisport.doc"   : "The TCP port number of the redis instance.", 
+                                                                                                                                      
+                                    "redistag"        : "redistag1",                                                               
+                                    "redistag.doc"    : "A short identifier of your choosing. Ends up in the filename of the backups. Allowed characters: [A-Za-z0-9\\-#] (no underscore)."
+                                 
+                                 },{ 
+                                 
+                                    "redishost"       : "redis-host2",
+                                    "redishost.doc"   : "The IP-adress of the machine where the redis instance is located.", 
+                             
+                                    "redisport"       : "6379",                                                               
+                                    "redisport.doc"   : "The TCP port number of the redis instance.", 
+                                                                                                                                      
+                                    "redistag"       : "redistag2",                                                               
+                                    "redistag.doc"   : "A short identifier of your choosing. Ends up in the filename of the backups. Allowed characters: [A-Za-z0-9\\-#] (no underscore)."
+                                 
+                                 }
+                             
+                               ]
+                             
+} 

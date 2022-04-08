@@ -1,0 +1,29 @@
+{
+
+  "mode"                        : "aof_recreate",
+  "mode.doc"                    : "This mode sends a request to redis_aof_reconstruct server instance, with",
+  "mode.notes"                  : "Handles multiple clients on multiple servers.",
+                            
+  "reconstructhost"             : "localhost",
+  "reconstructhost.doc"         : "The machine where the AOF slices reside. You can also enter 'localhost'.",
+  
+  "reconstructport"             : "49998",
+  "reconstructport.doc"         : "The TCP server-socket port of the aof_reconstruct instance, which will be available for mode:redis_recreate instances on other machines.",
+ 
+  "recreatehost"                : "localhost",
+  "recreatehost.doc"            : "The current machine. Supply the name on which the server should be registered by the os. You can also enter 'localhost'.",
+  
+  "recreateport"                : "49997",
+  "recreateport.doc"            : "The TCP server-socket port of the aof_reconstruct instance, which will be available for mode:redis_recreate instances on other machines.",
+    
+  "redisstartupcommand"         : "%AmberEclipseWorkspace%.metadata/.plugins/org.eclipse.debug.core/.launches/tools/Redis-Msdn-2.6_alpha_x64/redis-server.exe",
+ 
+  "workdir"                     : "%AmberEclipseWorkspace%py-redisrollforward/features/steps/testdata", 
+     
+  "target_redis_server_summary" : "%AmberEclipseWorkspace%py-redisrollforward/features/steps/config/test_aof_recreate_redis_server_summary.json",
+                            
+  "logdir"                      : "%AmberEclipseWorkspace%py-redisrollforward/features/steps/testdata",
+  "logdir.doc"                  : "The full path to the logging directory of this process"
+  
+}
+

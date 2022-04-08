@@ -1,0 +1,36 @@
+{                         
+                          
+  "mode"                  : "aof_read",
+  "mode.doc"              : "This mode reads the aof file and sends per-second changes to the aof_sink on another server.",
+  "mode.notes"            : "The aof file is rewritten/truncated daily, by an (internal) bgrewriteaof command. FREF@9704e102f: auto-aof-rewrite-percentage and auto-aof-rewrite-percentage should be set to 0 in the redis conf file, if aof_read daemons are running",
+                          
+  "aofpath"               : "e:/",
+  "aofpath.doc"           : "The full path to the aof file wich is monitored",
+                          
+  "logdir"                : "e:/",
+  "logdir.doc"            : "The full path to the logging directory of this process",
+                          
+  "workdir"               : "e:/",
+  "workdir.doc"           : "The full path to the working directory of this process",
+  "workdir.notes"         : "The 'last state' is persisted in this directory. It can optionally be backed up, but this is not mandatory. It is used for optimizing data traffic.",
+                          
+  "redisport"             : "45321",
+  "redisport.doc"         : "The TCP port number of the redis instance. This script must run on re, so 'redishost' is not configurable.",
+                          
+  "redistag"              : "tst",
+  "redistag.doc"          : "A short identifier of your choosing. Ends up in the filename of the backups. Allowed characters: [A-Za-z0-9\\-#] (no underscore).",
+                          
+  "funnelhost"            : "localhost",
+  "funnelhost.doc"        : "The host that runs the mode:aof_sink server.",
+                          
+  "funnelport"            : "49999",
+  "funnelport.doc"        : "The TCP port that is configured for the mode:aof_sink server.",
+                          
+  "compresstofunnel"      : false,
+  "compresstofunnel.doc"  : "Normally set to true, to reduce TCP traffic and backup storage space. Can be set to false to test and troubleshoot your configuration.",
+                          
+  "bgrewriteaoftime"      : "02:00:00", 
+  "bgrewriteaoftime.doc"  : "When this time is passed, perform a bgrewriteaof on the redis instance"
+    
+  
+}

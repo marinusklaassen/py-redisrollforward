@@ -1,0 +1,21 @@
+{
+
+  "mode"                : "aof_funnel",
+  "mode.doc"            : "This mode recieves data from several processes in mode:aof_read",
+  "mode.notes"          : "Handles multiple clients on multiple servers.",
+  
+  "funnelhost"          : "localhost",
+  "funnelhost.doc"      : "The current machine. Supply the name on which the server should be registered by the os. You can also enter 'localhost'.",
+  
+  "funnelport"          : "30001",
+  "funnelport.doc"      : "The TCP server-socket port of the aof_funnel instance, which will be available for mode:aof_read instances on other machines. Choose a port number that is outside of the dynamic port range of the os.",
+  
+  "aofbackupdir"        : "/tmp",
+  "aofbackupdir.doc"    : "A path to the local file system where the aof parts will be written to. Several files can be created per second. A shallow directory structure will be created on the fly.",
+  "aofbackupdir.notes"  : "Example of output: '/var/aofbackup/192.168.100.10/2015-03-13/dwan_6379__2015-03-13_23-46-59_-_2015-03-13_23-51-44.lz4'; this is a slice of 23:51:44 that is part of a base set made by bgrewriteaof on 23:46:59.",
+  
+  "logdir"              : "/tmp",
+  "logdir.doc"          : "The full path to the logging directory of this process"
+  
+}
+
