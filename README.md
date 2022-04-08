@@ -2,6 +2,10 @@
 
 Runs allong side with a redis-server DB instance, to collect AI blocks for roll-forwarding backups to a specific point in time.
 
+## Overview
+
+![](img/doc_py-redisrollforward_servers.svg)
+
 ## Use Case
 
 For testing and troubleshooting purposes, a Redis developer wants to be able to instantiate a separate Redis instance, on a separate server, and apply a roll-forward up until a certain point in time.
