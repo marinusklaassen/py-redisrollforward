@@ -59,5 +59,10 @@ And during a specific moment during the day (midnight):
 
 ## Requirements
 
+- Python 2.7
 - Redis
 - yEd (for opening the flowcharts)
+
+## Notes
+
+This project is obsolete at Bertus due to the migration to a new ERP & E-commerce system. This code is mainly for backreference and needs some development to work with the with Redis >= 7 and Python 3. Also the tight coupling with InfluxDB for storing metrics can be phased out from the sources.
